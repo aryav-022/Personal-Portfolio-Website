@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -584,6 +585,12 @@ header .social div:hover ion-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        margin: 20px 0;
+    }
 }
 
 .box .percent {
