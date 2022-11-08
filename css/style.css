@@ -666,6 +666,18 @@ header .social div:hover ion-icon {
     animation: meter-js 1s linear forwards;
 }
 
+.box.react-bar .percent.active svg circle:nth-child(2) {
+    animation: meter-react 1s linear forwards;
+}
+
+.box.tailwind-bar .percent.active svg circle:nth-child(2) {
+    animation: meter-tailwind 1s linear forwards;
+}
+
+.box.node-bar .percent.active svg circle:nth-child(2) {
+    animation: meter-node 1s linear forwards;
+}
+
 .box.python-bar .percent.active svg circle:nth-child(2) {
     animation: meter-python 1s linear forwards;
 }
@@ -676,6 +688,18 @@ header .social div:hover ion-icon {
 
 .box.sql-bar .percent.active svg circle:nth-child(2) {
     animation: meter-sql 1s linear forwards;
+}
+
+.box.mongo-bar .percent.active svg circle:nth-child(2) {
+    animation: meter-mongo 1s linear forwards;
+}
+
+.box.selenium-bar .percent.active svg circle:nth-child(2) {
+    animation: meter-selenium 1s linear forwards;
+}
+
+.box.hosting-bar .percent.active svg circle:nth-child(2) {
+    animation: meter-hosting 1s linear forwards;
 }
 
 .box .percent .number {
@@ -756,6 +780,60 @@ header .social div:hover ion-icon {
     }
     to {
         stroke-dashoffset: 252;
+    }
+}
+
+@keyframes meter-react {
+    from {
+        stroke-dashoffset: 630;
+    }
+    to {
+        stroke-dashoffset: 126;
+    }
+}
+
+@keyframes meter-tailwind {
+    from {
+        stroke-dashoffset: 630;
+    }
+    to {
+        stroke-dashoffset: 189;
+    }
+}
+
+@keyframes meter-node {
+    from {
+        stroke-dashoffset: 630;
+    }
+    to {
+        stroke-dashoffset: 157.5;
+    }
+}
+
+@keyframes meter-selenium {
+    from {
+        stroke-dashoffset: 630;
+    }
+    to {
+        stroke-dashoffset: 441;
+    }
+}
+
+@keyframes meter-hosting {
+    from {
+        stroke-dashoffset: 630;
+    }
+    to {
+        stroke-dashoffset: 189;
+    }
+}
+
+@keyframes meter-mongo {
+    from {
+        stroke-dashoffset: 630;
+    }
+    to {
+        stroke-dashoffset: 126;
     }
 }
 
