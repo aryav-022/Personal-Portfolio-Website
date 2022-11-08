@@ -263,7 +263,7 @@ header .social div:hover ion-icon {
 
 @media screen and (max-width: 725px) {
     #home .photo img {
-        width: 100% !important;
+        margin: 10px 0;
     }
     #home .photo div ion-icon {
         display: none !important;
@@ -275,9 +275,17 @@ header .social div:hover ion-icon {
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important;
+        width: 100vw;
     }
     #home .intro div {
         font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #home .photo img {
+        height: 250px !important;
+        width: 250px !important;
     }
 }
 
@@ -347,17 +355,37 @@ header .social div:hover ion-icon {
     margin-right: 50px;
     transition: 2s;
     opacity: 0;
+    border-radius: 20px;
 }
 
 #home .photo.active {
-    left: 0;
+    left: -130px;
     opacity: 1;
+}
+
+#home .photo img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 7rem 0;
+    filter: hue-rotate(0deg);
+    box-shadow: 0 0 30px 0 #855488;
+    rotate: 10deg;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+#home .photo img:hover {
+    rotate: 0deg;
+    filter: hue-rotate(100deg);
+    box-shadow: 0 0 30px 0 #00eeff;
 }
 
 
 /* Icons */
 
-#home .photo div {
+/* #home .photo div {
     position: absolute;
     display: grid;
     place-content: center;
@@ -365,9 +393,9 @@ header .social div:hover ion-icon {
     width: 100px;
     background-color: #363636;
     clip-path: circle(50%);
-}
+} */
 
-#home .photo div:nth-child(1) {
+/* #home .photo div:nth-child(1) {
     top: 90px;
     left: 50px;
     transform: rotate(-15deg);
@@ -396,7 +424,7 @@ header .social div:hover ion-icon {
     color: white;
     font-size: 60px;
     z-index: 1;
-}
+} */
 
 
 /* Download Resume Button */
