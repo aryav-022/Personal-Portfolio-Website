@@ -34,6 +34,16 @@ header.active {
     header nav {
         display: none;
     }
+
+    footer ul li {
+        display: block !important;
+        margin-top: 20px !important;
+    }
+
+    footer ul li:last-child {
+        display: block !important;
+        margin-bottom: 20px !important;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -45,9 +55,6 @@ header.active {
     }
     .toggle {
         display: flex !important;
-    }
-    footer {
-        font-size: 12px !important;
     }
 }
 
@@ -959,15 +966,28 @@ header .social div:hover ion-icon {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     text-align: center;
-    font-size: large;
     font-family: consolas;
     font-weight: bold;
     padding: 20px;
+    font-size: normal;
+}
+
+footer ul {
+    margin: auto;
+}
+
+footer ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    list-style: none;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -1001,4 +1021,40 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(100, 100, 100);
+}
+
+.tnc-container {
+    margin: 250px 5% 5%;
+    color: white;
+    text-align: justify;
+}
+
+.tnc-container > * {
+    margin: 3rem 0;
+}
+
+.tnc-container h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tnc-container h2 {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tnc-container p {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 1rem 0;
+}
+
+.tnc-container a {
+    color: #00eeff;
+    text-decoration: none;
+}
+
+.tnc-container a:hover {
+    color: #00eeff;
+    text-decoration: underline;
 }
